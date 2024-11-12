@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibakaran's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        h1, h2, h3 {
+            color: #3e5b99; /* Professional navy color */
+        }
+        a {
+            text-decoration: none;
+            color: #3e5b99;
+        }
+        a:hover {
+            color: #dd6e42; /* Accent color */
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #3e5b99;
+            padding: 1em;
+            color: #fff;
+            text-align: center;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #dd6e42;
+        }
+
+        /* Start Page */
+        .main-content {
+            padding: 2em;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin-top: 1em;
+        }
+
+        /* CV Section */
+        #cv {
+            background-color: #fff;
+            padding: 2em;
+            margin: 2em auto;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .personal-info, .details {
+            padding: 1em;
+        }
+        .personal-info img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+        .skills ul, .experience ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Recipe Section */
+        #recipe {
+            padding: 2em;
+            text-align: center;
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            padding: 2em;
+            background-color: #f4f4f9;
+        }
+        iframe {
+            border: 0;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3e5b99;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Nibakaran's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Niba's Portfolio</a></li>
+                <li><a href="#recipe">Favorite Recipe</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home" class="main-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Dedicated Business Informatics student with expertise in IT, sustainability, and data analysis.</p>
+        <div class="gallery">
+            <img src="https://raw.githubusercontent.com/Niba777/webtech/refs/heads/main/My%20Image.jpg" alt="Profile Picture 1">
+            <img src="https://raw.githubusercontent.com/Niba777/webtech/refs/heads/main/WhatsApp%20Image%202024-11-04%20at%2013.50.47_9bbb343d.jpg" alt="Profile Picture 2">
+            <img src="https://raw.githubusercontent.com/Niba777/webtech/refs/heads/main/WhatsApp%20Image%202024-11-04%20at%2013.50.48_c8ff04e2.jpg" alt="Profile Picture 3">
+        </div>
+        <p class="quote">"The best brains of the nation may be found on the last benches of the classroom." - APJ Abdul Kalam</p>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv">
+        <div class="personal-info">
+            <img src="https://raw.githubusercontent.com/Niba777/webtech/refs/heads/main/WhatsApp%20Image%202024-11-01%20at%2023.59.39_fca71628.jpg">
+            <p><strong>Languages:</strong> Tamil, English, German</p>
+            <p><strong>Email:</strong> <a href="mailto:nibakaran1125@gmail.com">nibakaran1125@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nibakaran" target="_blank">linkedin.com/in/nibakaran</a></p>
+        </div>
+        <div class="details">
+            <h3>Summary</h3>
+            <p>Business Informatics student passionate about IT security, sustainability, and data analysis, with experience in strategic initiatives and team collaboration.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>Technical: Python, MySQL, SAP ERP, R-Studio</li>
+                <li>Project Management, Data Analysis, Communication</li>
+            </ul>
+            <h3>Interested Areas</h3>
+            <ul>
+                <li>Cyber Security</li>
+                <li>Aviation</li>
+                <li>Data Analysis</li>
+            </ul>
+            <h3>Experience</h3>
+            <p>Working Student - SunExpress, Frankfurt, Germany (Apr 2023 - Aug 2024)</p>
+            <ul>
+                <li>Developed environmental strategies, achieving reductions in carbon emissions.</li>
+                <li>Performed gap analysis for sustainability improvements.</li>
+            </ul>
+            <h3>Education</h3>
+            <p>B.Sc. International Business Information Systems, Hochschule Furtwangen University</p>
+            <p><strong>Expected Graduation:</strong> March 2026</p>
+        </div>
+    </section>
+
+    <!-- Recipe Section -->
+    <section id="recipe">
+        <h2>Favorite Recipe: Biryani</h2>
+        <p>Aromatic and flavorful South Asian rice dish with spices.</p>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Rice</li>
+            <li>Spices</li>
+            <li>Chicken or Vegetables</li>
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+            <li>Marinate the chicken with yogurt and spices.</li>
+            <li>Cook rice with whole spices until partially done.</li>
+            <li>Layer rice and chicken, then steam until fully cooked.</li>
+        </ol>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:nibakaran1125@gmail.com">nibakaran1125@gmail.com</a></p>
+        <h2>Where I live</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42543.12349892281!2d11.302844129986656!3d48.207671091387695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7edcd650216f%3A0x41e48add78b9780!2sOlching!5e0!3m2!1sen!2sde!4v1731417574952!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nibakaran. All rights reserved.</p>
+        <p>Connect on <a href="https://www.linkedin.com/in/nibakaran">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
